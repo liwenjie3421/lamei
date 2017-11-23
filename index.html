@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>亲爱的，感恩节快乐</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .col-xs-4 {
+            overflow: hidden;
+            width: calc(100% / 3);
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var doms = document.getElementsByClassName('col-xs-4');
+            var l = doms.length;
+            for (let index = 0; index < l; index++) {
+                doms[index].style.height = doms[0].offsetHeight + 'px';
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <img src="./img/1.jpg" alt="">
+            </div>
+            <div class="col-xs-4">
+                <img src="./img/2.jpg" alt="">
+            </div>
+            <div class="col-xs-4">
+                <img src="./img/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <img src="./img/4.jpg" alt="">
+            </div>
+            <div class="col-xs-4">
+                <img src="./img/lamei.jpg" alt="">
+            </div>
+            <div class="col-xs-4">
+                <img src="./img/6.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <img src="./img/7.jpg" alt="">
+            </div>
+            <div class="col-xs-4">
+                <img src="./img/8.jpg" alt="">
+            </div>
+            <div class="col-xs-4">
+                <img src="./img/9.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
